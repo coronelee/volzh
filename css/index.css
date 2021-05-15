@@ -1,0 +1,271 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "PT Sans";    
+    scroll-behavior: smooth
+}
+a{
+    text-decoration: none;
+    color: white
+}
+.contentSite{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.contentSite__header{
+    width: 100%;
+    height: 210px;
+    transition: 0.5s all
+}
+.contentSite__header-fixed{
+    width: 100%;
+    height: 210px;
+    position: fixed;
+    z-index: 3;
+    animation: show_header 1s;
+}
+
+@keyframes show_header{
+    0%{
+        opacity: 0;
+        top:-300px;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.contentSite__header_top, 
+.contentSite__header_center, 
+.contentSite__header_bottom{
+    width: 100%;
+    height: 80px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+}
+.contentSite__header_top{
+    background-color: #0BA0FF;
+}
+.contentSite__header_center{
+    position: relative;
+    background-color: white
+}
+.contentSite__header_bottom{
+    height: 50px;
+    background-color: #0BA0FF;
+}
+.header__bottom-container{
+    height: 100%;
+    width: 700px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.item__bottom-container{
+    width: 250px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    font-family: "PT Sans";
+    font-size: 15px;
+    color: white;
+    transition: 0.5s all
+}
+.item__bottom-container:hover{
+    background-color: #606BE0;
+    cursor: pointer;
+}
+.header__center-container{
+    height: 100%;
+    width: 700px;
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.header__right-block{
+    height: 100%;
+    align-items: center;
+    justify-content: left;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    position: absolute;
+    font-family: "PT Sans";
+    font-size: 10px;
+    color: gray
+}
+.header__logo{
+    background: url('../imgs/logo.png') center center no-repeat;
+    background-size: 100%;
+    width: 70px;
+    margin: 0 auto;
+    
+}
+.header__left-block{
+    height: 100%;
+    align-items: center;
+    justify-content: left;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    position: absolute;
+    position: absolute;
+    right: 0;
+    background: url("../imgs/translate.png") no-repeat right;
+    background-size: 100%;
+    width: 40px;
+}
+.warning{
+    width: 490px;
+    background: url('../imgs/codiv.png') no-repeat right;
+    background-size: 10%;
+    font-size: 24px;
+    height: 100%;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold
+}
+
+.warning__span{
+    margin-top: 27px;
+}
+
+.imageNews,
+.imageDost,
+.imageAds,
+.imageRazv,
+.imageHelp{
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.imageNews{
+    background: url("../imgs/news.png") no-repeat center center;
+    background-size: 40%;
+}
+.imageDost{
+    background: url("../imgs/dost.png") no-repeat center center;
+    background-size: 40%;
+}
+.imageAds{
+    background: url("../imgs/ads.png") no-repeat center center;
+    background-size: 40%;
+}
+.imageRazv{
+    background: url("../imgs/razvl.png") no-repeat center center;
+    background-size: 40%;
+}
+.imageHelp{
+    background: url("../imgs/help.png") no-repeat center center;
+    background-size: 50%;
+}
+
+.contentSite__content{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.__content-container{
+    width: 700px;
+    height: 100%;
+    background-color: wheat;
+    margin: 0 auto;
+}
+
+@media (max-width: 550px){
+    .warning{
+        background: url('../imgs/covid.png') no-repeat center center;      
+    }
+    .warning__span{
+        display: none;
+    }
+}
+
+@media (max-width: 700px){
+    .header__center-container{
+        width: 300px;
+    }
+    .header__bottom-container{
+        width: 300px;
+        margin: 0;
+    }
+    .item__bottom-container span{
+        display: none;
+    }
+    .imageNews,
+    .imageDost,
+    .imageAds,
+    .imageRazv,
+    .imageHelp{
+        display: block;
+    }
+}
+
+.swiper-slide{
+    background: url(https://mcdn.tvzvezda.ru/schedule/programs/content/201901111044-rfc6.htm/1.jpg) no-repeat center center;
+    background-size: cover
+}
+
+.swiper-container {
+  width: 700px;
+  height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
